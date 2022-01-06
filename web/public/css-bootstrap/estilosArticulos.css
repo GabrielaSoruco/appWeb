@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Yellowtail&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    padding-top: 80px;
+    scroll-behavior: smooth;
+}
+
+.img-logo {
+    border-radius: 50%;
+    width: 60px;
+    height: 45px;
+}

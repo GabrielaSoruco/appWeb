@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Yellowtail&display=swap');
+
+*{
+    margin:0px;
+    padding: 0px;
+    font-family:'Raleway', sans-serif;
+}
+
+body{
+    padding-top: 80px;
+    scroll-behavior: smooth;
+}
+
+.img-logo{
+    border-radius: 50%;
+    width: 60px;
+    height: 45px;
+}
+
+.carrusel{
+    box-shadow: 10px 8px 15px rgb(172, 166, 166);
+    position: relative;
+}
+
+h5{
+    font-family: 'Yellowtail', cursive;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 46px;
+    color: #ff9e05;
+    text-shadow: -2px 1px #ff0c04;
+}
+
+.carousel-caption p{
+    color: #ff9e05;
+    text-shadow: -2px 1px #000;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.caja-titulos{
+    position: relative;
+}
+
+.caja{
+    width: 100%;
+    height: 60vh;
+    margin: 120px 0 50px 0;
+}
+
+.caja_bio{
+    color: #444444;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-color: #f5f5f5;
+    background-image: url(../img/biografia-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.caja_bio:before{
+    content: "";
+    min-height: 60vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.5;
+}
+
+.titulo-section h1{   
+    z-index: 8;
+    padding: 30px;
+    font-size: 70px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.caja-filmografia{
+    color: rgb(245, 245, 245);
+    background-color: #151515;
+    background-image: url(../img/filmografia-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caja-filmografia:before{
+    content: "";
+    min-height: 60vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.caja-ranking{
+    color: rgb(31, 31, 31);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/peliculas-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0%;
+    text-align: center;
+}
+
+.caja-ranking:before{
+    content: "";
+    min-height: 60vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(197, 197, 197, 0.5);
+}
+
+.titular h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    text-align: left;
+    padding: 20px 0px;
+    margin-bottom: 0px;
+}
+
+.numero{
+    font-size: 60px;
+    /*color: #ffd700;*/
+    color: #efc704;
+    padding-right: 5px;
+    font-weight: 700;
+}
+
+.textual{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+figure {
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #e7e6e6;
+    border-radius: 5px;
+}
+
+figure img{
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, .7);
+}
+
+figcaption{
+    font-size: 14px;
+    font-family: 'Oswald', Sans-serif;
+    font-weight: 300;
+}
+
+figcaption ul{
+    display: inline-block;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+figcaption li{
+    font: 14px 'Oswald';
+    margin-top: 5px;
+    padding-top: 5px;
+    list-style: none;
+    text-align: justify;
+}
+
+.container-img .imagen{
+    position: relative;
+}
+
+.imagen img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, .6);
+}
+
+.link-movie{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 0;
+    transition: 0.4s ease;
+    overflow: hidden;
+}
+
+.link-movie h2{
+    color: rgb(255, 255, 255);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover > .link-movie{
+    height: 100%;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    height: 34vh;
+    background-color: #ff0c04;
+    margin-top: 30px;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: #ff9606;
+}
+
+.footer-title{
+    height: 45%;
+    text-align: center;
+    margin: 6px 0 4px;
+}
+
+.footer-title h1{
+    font-family: 'Oswald', sans-serif;
+    padding: 2px 0px;
+}
+
+.footer-subtitle{
+    color: rgba(197, 197, 197, 0.5);
+    padding: 2px 0px;
+}
+
+.footer-socials{
+    height: 30%;
+    margin: 12px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social{
+    font-size: 24px;
+    color: #ff9606;
+    margin: 0px 22px;
+}
+
+.footer-social:hover{
+    color: #000;
+}
+
+.footer-footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 25%;
+    margin-bottom: 3px;
+}
+
+.footer-text{
+    font-size: 15px;
+    padding: 4px;
+}
+
+.footer-copy{
+    font-size: 12px;
+}
